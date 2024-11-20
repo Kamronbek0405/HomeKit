@@ -13,6 +13,9 @@ export default {
         bgroundColorCream: '#fdeaea',
        
       },
+      backgroundImage: {
+        customGradient: 'linear-gradient(45deg, #000000, #6b0000, #000000)'
+      },
       keyframes: {
         shadowPulse: {
           '0%, 100%': { boxShadow: '#b50a3f' }, // To'g'ri sintaksis

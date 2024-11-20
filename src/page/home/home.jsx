@@ -3,6 +3,7 @@ import { Hero } from './components/hero'
 import { About } from './components/about'
 import { AnimatedSection } from './components/animated-section'
 import { Phone } from './components/phone'
+import { Advantages } from './components/advantages'
 
 export const Home = () => {
   return (
@@ -10,7 +11,7 @@ export const Home = () => {
         <section className='bg-slate-600'>
             <Hero/>
         </section>
-        <section>
+        <section id='service'>
             <About/>
         </section>
         <section >
@@ -18,6 +19,9 @@ export const Home = () => {
         </section>
         <section>
           <Phone/>
+        </section>
+        <section>
+          <Advantages/>
         </section>
     </div>
   )

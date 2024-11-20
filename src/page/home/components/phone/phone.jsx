@@ -23,124 +23,129 @@ import { Thermostats } from '../../../../icon/thermostats'
 import { Humidifiers } from '../../../../icon/humidifiers'
 
 import 'aos/dist/aos.css'; // Import AOS styles
+import { useTranslation } from 'react-i18next'
 
 
 export const Phone = () => {
-    
+    const { t, i18n } = useTranslation()
+
+
     return (
-        <div className='w-[100%] h-auto py-20 bg-gradient-to-r from-gray-700 via-red-950 to-gray-700 flex flex-col  items-center justify-center gap-10'>
+        <div id='contact' className='w-[100%] h-auto py-20 bg-gradient-to-r from-gray-700 via-red-950 to-gray-700 flex flex-col  items-center justify-center gap-10'>
             <div className=' w-[800px] mr-32'>
                 <span className='text-white text-lg' data-aos="fade-right">
-                    Bizning operatorlarimiz sizga tez orada javob berishadi.
+                    {t("Bizning operatorlarimiz sizga tez orada javob berishadi.")}
                 </span>
 
                 <h1 className='text-5xl font-medium text-white py-5' data-aos="fade-left">
-                    O'z telefon raqamingizni qoldiring
+                    {t("O'z telefon raqamingizni qoldiring")}
                 </h1>
 
             </div>
-            <div className='w-[1100px] h-[800px]  flex flex-col items-center  rounded-3xl border-2 border-white'>
+            <div className='w-[1100px] h-[850px]  flex flex-col items-center  rounded-3xl border-2 border-white'>
                 <div className='py-5 ml-14'>
-                    <input className='w-[1000px] py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder='Ismi' />
+                    <input className='w-[1000px] py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder={t("Ismi")} />
                     <div className='w-[990px] h-[0.5px] mt-1 bg-white'></div>
                 </div>
                 <div className='py-5 ml-14'>
-                    <input className='w-[1000px] py-2 text-white font-medium    bg-transparent outline-none' type="number" placeholder='Telefon raqami' />
+                    <input className='w-[1000px] py-2 text-white font-medium    bg-transparent outline-none' type="number" placeholder={t("Telefon raqami")} />
                     <div className='w-[990px] h-[0.5px] mt-1  bg-white '></div>
                 </div>
                 <div className=' flex flex-wrap px-20 mt-16 justify-center gap-16'>
-                    <div className='flex flex-col items-center text-white hover:scale-125    transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <AudioSystems />
-                        <span>Аудиосистемы</span>
+                        <span>{t("Audio tizimlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Fans />
-                        <span>Вентиляторы</span>
+                        <span>{t("Ventilyatorlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Switches />
-                        <span>Вентиляторы</span>
+                        <span>{t("Kalitlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Sensors />
-                        <span>Вентиляторы</span>
+                        <span>{t("Datchiklar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Garage />
-                        <span>Вентиляторы</span>
+                        <span>{t("Garaj eshiklari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Doorbells />
-                        <span>Вентиляторы</span>
+                        <span>{t("Eshik qo'ng'irog'lari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Castles />
-                        <span>Вентиляторы</span>
+                        <span>{t("Zamkilar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Foto />
-                        <span>Вентиляторы</span>
+                        <span>{t("Kameralar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Conditioners />
-                        <span>Вентиляторы</span>
+                        <span>{t("Konditsionerlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Mashrut />
-                        <span>Вентиляторы</span>
+                        <span>{t("Marshrutizatorlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Windows />
-                        <span>Вентиляторы</span>
+                        <span>{t("Oynalar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Lighting />
-                        <span>Вентиляторы</span>
+                        <span>{t("Yoritish")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Security />
-                        <span>Вентиляторы</span>
+                        <span>{t("Xavfsizlik tizimlari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Purifiers />
-                        <span>Вентиляторы</span>
+                        <span>{t("Havo tozalash uskunalari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Receivers />
-                        <span>Вентиляторы</span>
+                        <span>{t("Qabul qiluvchilar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Sockets />
-                        <span>Вентиляторы</span>
+                        <span>{t("Rozetkalar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Network />
-                        <span>Вентиляторы</span>
+                        <span>{t("Tarmoq ko‘priklari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Irrigation />
-                        <span>Вентиляторы</span>
+                        <span>{t("Sug‘orish tizimlari")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Faucets />
-                        <span>Вентиляторы</span>
+                        <span>{t("Armaturalar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Televizor />
-                        <span>Вентиляторы</span>
+                        <span>{t("Televizorlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Thermostats />
-                        <span>Вентиляторы</span>
+                        <span>{t("Termostatlar")}</span>
                     </div>
-                    <div className='flex flex-col items-center text-white hover:scale-125   transition-all duration-500'>
+                    <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                         <Humidifiers />
-                        <span>Вентиляторы</span>
+                        <span>{t("Havo namlatuvchilari")}</span>
                     </div>
+
+
 
 
                 </div>
-                <button className='mt-20 w-[1000px] h-[50px]  bg-customRed text-white'>Yuborish</button>
+                <button className='mt-20 w-[1000px] h-[50px]  bg-customRed text-white'>{t("Yuborish")}</button>
             </div>
         </div>
     )

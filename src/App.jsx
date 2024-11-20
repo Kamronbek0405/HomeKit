@@ -1,20 +1,21 @@
-
-import { Route, Routes } from 'react-router-dom'
-import { MainLayout } from './layout/main-layout'
-import { Home } from './page/home'
-
+import { Route, Routes } from 'react-router-dom';
+import { MainLayout } from './layout/main-layout';
+import { Home } from './page/home';
 
 function App() {
+ 
 
   return (
     <>
-     <Routes>
-      <Route path='/' element={<MainLayout/>}>
-        <Route index  element={<Home/>}/>
-      </Route>
-     </Routes>
+    
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+     
     </>
-  )
+  );
 }
 
-export default App
+export default App;

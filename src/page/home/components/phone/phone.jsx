@@ -67,7 +67,7 @@ export const Phone = () => {
                 </h1>
 
             </div>
-            <div className='w-[400px] h-[110vh]  flex flex-col items-center  rounded-3xl border-2 border-white lg:w-[1100px] lg:h-[850px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
+            <div className='w-[400px] h-[110vh]  flex flex-col items-center  rounded-3xl border-2 border-white lg:w-[1100px] lg:h-[880px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
                 <form onSubmit={sendMesage}>
                     <div className='lg:py-5 mt-12 lg:ml-14'>
                         <input className=' w-[330px]  lg:w-[1000px] lg:py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder={t("Ismi")} />
@@ -171,7 +171,7 @@ export const Phone = () => {
 
 
                     </div>
-                    <button className=' w-[330px] mt-9 text-white py-3  lg:mt-20 lg:w-[1000px] lg:h-[50px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
+                    <button className=' w-[330px] mt-9 text-white py-3  lg: ml-11 lg:mt-20 lg:w-[1000px] lg:h-[50px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
                 </form>
             </div>
         </div>

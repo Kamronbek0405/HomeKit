@@ -10,6 +10,18 @@
     transform: scale(0.8); 
     filter: blur(2px); 
   }
+  .slide-item2 {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: scale(0.8); 
+    filter: blur(2px); 
+  }
   
   .slick-center .slide-item {
     transform: scale(1.1) translateY(-100px); /* Markazdagi slaydni yuqoriga ko'tarish */
@@ -20,6 +32,7 @@
     width: 100%;
     background-color: red;
   }
+
   
   .slide-image {
     width: 200px;

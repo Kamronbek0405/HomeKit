@@ -2,7 +2,7 @@ import React from 'react';
 
  export const VerifiedIcon = () => {
   return (
-   <div className='w-[110px] h-[110px] py-3'>
+   <div className='lg:w-[80px] lg:h-[80px]  w-[30px] h-[30px]'>
      <svg
     className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
     focusable="false"
@@ -21,7 +21,7 @@ import React from 'react';
 
  export const VerifiedIcon2 = () => {
   return (
-   <div className='w-[75px] h-[75px] '>
+   <div className='lg:w-[75px] lg:h-[75px]  w-[25px] h-[25px] ml-2'>
      <svg
     className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
     focusable="false"
@@ -37,7 +37,7 @@ import React from 'react';
 
 export const VerifiedIcon3 = () => {
     return (
-     <div className='w-[70px] h-[70px] '>
+     <div className='lg:w-[70px] lg:h-[70px] w-[35px] h-[35px] ml-2 '>
        <svg
       className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
       focusable="false"

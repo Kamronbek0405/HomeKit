@@ -45,7 +45,7 @@ export const Header = () => {
 
   return (
     <header
-    className={`px-5 bg-black w-[428px] flex items-center justify-between py-7 lg:w-full lg:py-3 lg:bg-black lg:flex lg:items-center lg:px-20 lg:justify-between lg:shadow-lg
+    className={`px-5 bg-black w-[100%] flex items-center justify-between py-7 lg:w-full lg:py-3 lg:bg-black lg:flex lg:items-center lg:px-20 lg:justify-between lg:shadow-lg
       ${isSticky ? "fixed top-0 z-50 opacity-80 lg:fixed lg:top-0 lg:z-50 lg:opacity-80 transform transition-all duration-300 ease-in-out" : "md:relative lg:relative"} 
       md:transition-all ease-in-out lg:transition-all lg:ease-in-out`}
   >

@@ -26,6 +26,20 @@ export const About = () => {
         });
 
     }, []);
+    useEffect(() => {
+        if (window.innerWidth < 768) {
+          
+          AOS.init({
+            disable: true,
+          });
+        } else {
+         
+          AOS.init({
+            disable: false,
+          });
+        }
+      }, []);
+      
 
     return (
         <div className="w-[100%] h-auto bg-gradient-to-t from-black via-red-950 to-black mt-10 flex items-center flex-col">

@@ -33,7 +33,7 @@ export const Phone = () => {
     const sendMesage = (event) => {
         event.preventDefault()
         const token = '7908338624:AAHIHkcrc0wjmkA5WwM4xE7M52HJ6nLugV0';
-        const chat_id = 1271362249;
+        const chat_id = "1271362249";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const name = document.getElementById("name").value
         const surname = document.getElementById("surname").value
@@ -62,7 +62,7 @@ export const Phone = () => {
                     {t("Bizning operatorlarimiz sizga tez orada javob berishadi.")}
                 </span>
 
-                <h1 className=' text-white text-2xl font-medium px-10 mt-3 lg:text-5xl lg:font-medium lg:text-white lg:py-5' data-aos="fade-left">
+                <h1 className=' text-white text-2xl font-medium px-10 mt-3 lg:text-5xl lg:font-medium lg:text-white lg:py-5' >
                     {t("O'z telefon raqamingizni qoldiring")}
                 </h1>
 
@@ -70,7 +70,7 @@ export const Phone = () => {
             <div className='w-[400px] h-[110vh]  flex flex-col items-center  rounded-3xl border-2 border-white lg:w-[1100px] lg:h-[880px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
                 <form onSubmit={sendMesage}>
                     <div className='lg:py-5 mt-12 lg:ml-14'>
-                        <input className=' w-[330px]  lg:w-[1000px] lg:py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder={t("Ismi")} />
+                        <input  className=' w-[330px]  lg:w-[1000px] lg:py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder={t("Ismi")} />
                         <div className=' w-[330px]  lg:w-[990px] h-[0.5px] mt-1 bg-white'></div>
                     </div>
                     <div className='py-5 lg:ml-14'>
@@ -171,7 +171,7 @@ export const Phone = () => {
 
 
                     </div>
-                    <button className=' w-[330px] mt-9 text-white py-3  lg: ml-11 lg:mt-20 lg:w-[1000px] lg:h-[50px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
+                    <button type='submit' className=' w-[330px] mt-9 text-white py-3  lg: ml-11 lg:mt-20 lg:w-[1000px] lg:h-[50px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
                 </form>
             </div>
         </div>

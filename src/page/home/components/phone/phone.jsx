@@ -57,7 +57,7 @@ export const Phone = () => {
 
     return (
         <div id='contact' className='w-[100%] h-auto py-20 bg-gradient-to-r from-gray-700 via-red-950 to-gray-700 flex flex-col  items-center justify-center gap-10 '>
-            <div className='  lg:w-[800px]  lg:mr-32'>
+            <div className='   lg:w-[800px]  lg:mr-32'>
                 <span className=' text-white text-xs ml-10     lg:text-white lg:text-lg' data-aos="fade-right">
                     {t("Bizning operatorlarimiz sizga tez orada javob berishadi.")}
                 </span>
@@ -67,13 +67,13 @@ export const Phone = () => {
                 </h1>
 
             </div>
-            <div className='w-[400px] h-[110vh]  flex flex-col items-center  rounded-3xl border-2 border-white lg:w-[1100px] lg:h-[880px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
+            <div className='w-[400px] h-[160vh]  flex flex-col items-center  rounded-3xl border-2 border-white lg:w-[1100px] lg:h-[880px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
                 <form onSubmit={sendMesage}>
-                    <div className='lg:py-5 mt-12 lg:ml-14'>
+                    <div className='lg:py-5 mt-12 ml-8 lg:ml-14'>
                         <input  className=' w-[330px]  lg:w-[1000px] lg:py-2 text-white font-medium   bg-transparent outline-none' type="text" placeholder={t("Ismi")} />
                         <div className=' w-[330px]  lg:w-[990px] h-[0.5px] mt-1 bg-white'></div>
                     </div>
-                    <div className='py-5 lg:ml-14'>
+                    <div className='py-5 ml-8 lg:ml-14'>
                         <input className=' w-[330px]  lg:w-[1000px] py-2 text-white font-medium    bg-transparent outline-none' type="number" placeholder={t("Telefon raqami")} />
                         <div className='w-[330px] lg:w-[990px] h-[0.5px] mt-1  bg-white '></div>
                     </div>

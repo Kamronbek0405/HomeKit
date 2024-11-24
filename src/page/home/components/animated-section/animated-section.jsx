@@ -35,7 +35,7 @@ import { useTranslation } from "react-i18next";
   
 
   return (
-    <div id="aboutService" className="w-[425px] h-[100vh]   bg-gradient-to-t from-black via-rose-900 to-black relative  lg:w-full lg:h-[100vh] lg:bg-gray-100 lg:bg-gradient-to-t lg:from-black lg:via-rose-900 lg:to-black lg:relative">
+    <div id="aboutService" className="w-[420px] h-[123vh]   bg-gradient-to-t from-black via-rose-900 to-black relative  lg:w-full lg:h-[100vh] lg:bg-gray-100 lg:bg-gradient-to-t lg:from-black lg:via-rose-900 lg:to-black lg:relative">
   <Slider className="  lg:slider_container w-full  " {...settings}>
     <div className="slide-item bg-customRed mt-[300px]   relative lg:bg-customRed lg:mt-[320px] lg:relative  " >
       <img

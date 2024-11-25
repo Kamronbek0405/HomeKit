@@ -16,9 +16,9 @@ export const Footer = () => {
 
   return (
     <div className="w-[100%] h-[500px] bg-pink-800 flex flex-col justify-center items-center">
-      <div className="w-[100%] flex items-center justify-around">
-        <div className='lg:flex lg:items-center lg:justify-between lg:w-[650px]'>
-        <div>
+      <div className="w-[100%] flex items-center justify-around ">
+        <div className='lg:flex lg:items-center lg:justify-between lg:w-[650px] md:flex md:justify-between md:w-[500px] md:gap-10 md:mt-6'>
+        <div >
           <img
             className=" w-[80px] h-[80px] lg:w-[100px] lg:h-[100px]"
             src="https://www.homekit.uz/static/media/logoj.2c2229bbed9b4e4d95f4.png"
@@ -30,7 +30,7 @@ export const Footer = () => {
             <Telegram />
           </div>
         </div>
-        <div className="text-gray-400 flex flex-col gap-5">
+        <div className="text-gray-400 flex flex-col gap-5 ">
           <strong className="text-lg text-white">{t('Kompaniya haqida')}</strong>
           <ul>
             <button
@@ -86,7 +86,7 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className=" w-[350px] lg:w-[1200px] h-[1px] bg-white mt-5"></div>
+      <div className=" w-[350px] md:w-[740px] md:mt-5 lg:w-[1200px] h-[1px] bg-white mt-5 "></div>
     </div>
   );
 };

@@ -14,7 +14,6 @@ export const Header = () => {
     i18n.changeLanguage(selectedLanguage);
   };
 
-  // Scroll monitoring
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 100);
@@ -26,12 +25,12 @@ export const Header = () => {
     };
   }, []);
 
-  // Menu toggle function
+
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Menyu holatini o'zgartirish
+    setIsMenuOpen(!isMenuOpen); 
   };
 
-  // Smooth scroll uchun JavaScript
+
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.querySelector(targetId);
@@ -67,7 +66,7 @@ export const Header = () => {
     </div>
   
    
-    <div className="hidden lg:flex lg:items-center bg-black lg:gap-36 lg:ml-10 py-4">
+    <div className="hidden  lg:flex lg:items-center bg-black lg:gap-36 lg:ml-10 py-4">
       <nav className="flex items-center">
         <ul className="flex gap-10 text-white lg:flex lg:gap-32">
           <li>
@@ -115,7 +114,7 @@ export const Header = () => {
   
     <button className="lg:flex lg:items-center lg:justify-center lg:px-[22px] lg:rounded-xl lg:py-[9px] lg:bg-customRed lg:transition">
       <a
-        className="hidden md:block lg:w-[150px] lg:text-white lg:font-medium lg:flex-col lg:flex"
+        className="hidden  lg:w-[150px] lg:text-white lg:font-medium lg:flex-col lg:flex"
         href="tel:+998977772929"
       >
         +998 97 777 29 29 {t("Aloqa")}

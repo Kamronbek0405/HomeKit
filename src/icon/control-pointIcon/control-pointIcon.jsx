@@ -2,7 +2,7 @@ import React from 'react';
 
  export  const ControlPointIcon = () => {
   return (
-    <div className='lg:w-[85px] lg:h-[85px] lg:py-3 w-[60px] h-[30px]'>
+    <div className='lg:w-[85px] lg:h-[85px] lg:py-3 w-[60px] h-[30px] md:w-[42px]'>
         <svg
       className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
       focusable="false"

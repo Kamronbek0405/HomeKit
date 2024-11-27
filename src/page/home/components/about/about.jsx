@@ -42,7 +42,7 @@ export const About = () => {
 
 
     return (
-        <div className="w-[100%] h-auto bg-gradient-to-t from-black via-red-950 to-black mt-10 flex items-center flex-col">
+        <div className=" overflow-hidden w-[100%] h-auto  bg-gradient-to-t from-black via-red-950 to-black mt-10 flex items-center flex-col">
             <h1 className="text-white py-5 text-2xl -tracking-tighter font-medium md:text-4xl lg:text-5xl">{t("Bizning xizmatlarimiz")}</h1>
             <p className="text-center   px-5  text-white leading-8 lg:leading-9 text-lg md:w-[600px] lg:w-[890px] lg:text-lg">
                 {t("HomeKit kompaniyamiz 2019-yilda tashkil topgan bo'lib, ilk bor O'zbekistonda «HomeKit» nomi bilan ish boshlagan. Xizmatlarimiz turlari quyidagilardan iborat:")}
@@ -51,7 +51,7 @@ export const About = () => {
 
 
 
-            <div className="data-aos='fade-right' mt-16  w-[400px]  text-white bg-gradient-to-r from-bgroungColor to-gray-600 rounded-xl flex items-center gap-4 p-4 justify-center md:w-[660px] md:px-10 md:py-12  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
+            <div className="data-aos='fade-right' mt-16 overflow-hidden w-[400px]  text-white bg-gradient-to-r from-bgroungColor to-gray-600 rounded-xl flex items-center gap-4 p-4 justify-center md:w-[660px] md:px-10 md:py-12  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
                 data-aos="fade-right"
             >
                 <img className="w-[230px] h-[150px] rounded-xl lg:w-[400px] md:w-[350px] md:h-[200px] lg:h-[300px]" src="https://www.homekit.uz/static/media/t7.088bfdb5c8b1977c8892.jpg" alt="" />
@@ -66,7 +66,7 @@ export const About = () => {
 
 
 
-            <div className='flex mt-20 px-2 gap-3 ml-2 md:gap-16  lg:gap-10 lg:flex lg:items-center '>
+            <div className='flex mt-20 px-2 gap-3 ml-2 overflow-hidden md:gap-16  lg:gap-10 lg:flex lg:items-center '>
                 <div className='text-white  w-[200px] flex items-center flex-col  h-[320px] rounded-lg bg-gradient-to-b from-gray-700 to-rose-900 lg:bg-gradient-to-b lg:from-gray-700 lg:to-rose-900  lg:rounded-2xl md:w-[300px] md:h-[400px]   lg:w-[500px] lg:h-[620px] lg:bg-gray-300 lg:flex lg:flex-col lg:items-center ' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img className='w-[180px]  mt-5  h-[120px]  rounded-lg lg:rounded-xl md:w-[250px] md:h-[150px] lg:w-[350px] lg:mt-14 lg:h-[250px]' src="https://www.homekit.uz/static/media/newkalit.cfb0145959340fb61282.jpeg" alt="" />
                     <div className='  md:mt-5 md:ml-5 lg:px-10'>
@@ -104,7 +104,7 @@ export const About = () => {
 
 
 
-            <div className="data-aos='fade-right' mt-16  w-[400px]  text-white bg-gradient-to-r  from-gray-800 to-rose-900 rounded-xl flex items-center gap-4 p-4 justify-center   md:w-[660px] md:px-10 md:py-10  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
+            <div className="data-aos='fade-right' mt-16 overflow-hidden  w-[400px]  text-white bg-gradient-to-r  from-gray-800 to-rose-900 rounded-xl flex items-center gap-4 p-4 justify-center   md:w-[660px] md:px-10 md:py-10  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
                 data-aos="fade-right"
             >
                 <img className="w-[170px] h-[130px] rounded-xl md:w-[280px] md:h-[200px] lg:w-[400px] lg:h-[300px]" src="https://www.homekit.uz/static/media/w2.ec6ec951e9bd7d1ab91e.jpg" alt="" />
@@ -115,7 +115,7 @@ export const About = () => {
             </div>
 
 
-            <div className="data-aos='fade-left' mt-16  w-[400px]  text-white bg-gradient-to-r  from-gray-800 to-rose-900 rounded-xl flex items-center gap-4 p-4 justify-center  md:w-[660px] md:px-10 md:py-3  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
+            <div className="data-aos='fade-left' mt-16  overflow-hidden w-[400px]  text-white bg-gradient-to-r  from-gray-800 to-rose-900 rounded-xl flex items-center gap-4 p-4 justify-center  md:w-[660px] md:px-10 md:py-3  lg:mt-20 lg:w-[1100px] lg:py-[100px] lg:text-white lg:bg-gradient-to-r lg:from-bgroungColor lg:to-gray-600 lg:rounded-2xl lg:flex lg:items-center lg:gap-16 lg:justify-center"
                 data-aos="fade-left"
             >
                 <img className="w-[170px] h-[130px] rounded-xl md:w-[275px] md:h-[200px] lg:w-[400px] lg:h-[300px]" src="https://www.homekit.uz/static/media/w9.48ccdfc9745d9175da5d.jpg" alt="" />
@@ -143,8 +143,8 @@ export const About = () => {
 
 
 
-            <div id='about' className=' w-[100%]  h-[130vh] flex    items-center justify-center  relative mt-20 md:h-[65vh] md:flex      lg:w-[100%]  lg:h-[700px] lg:flex lg:items-center lg:justify-center lg:relative lg:mt-20'>
-                <div className=" absolute bg-bgroundColorCream flex flex-col justify-center w-[390px] h-[400px] px-8 gap-5 top-3 rounded-2xl md:left-16  md:w-[700px]  md:top-52 lg:mt-20 lg:bg-bgroundColorCream lg:w-[900px] lg:h-[488px] lg:relative lg:py-[40px] lg:px-20 lg:rounded-2xl lg:flex lg:gap-5 lg:flex-col"
+            <div id='about' className=' w-[100%]  h-[130vh] overflow-hidden flex    items-center justify-center  relative mt-20 md:h-[65vh] md:flex      lg:w-[100%]  lg:h-[120vh] lg:flex lg:items-center lg:justify-center lg:relative lg:mt-20'>
+                <div className=" absolute bg-bgroundColorCream flex flex-col justify-center w-[390px] h-[400px] px-8 gap-5 top-3 rounded-2xl md:left-16  md:w-[700px] md:top-52 lg:mt-20 lg:bg-bgroundColorCream lg:w-[900px] lg:h-[488px] lg:relative lg:py-[40px] lg:-top-5 lg:left-5 lg:px-20 lg:rounded-2xl lg:flex lg:gap-5 lg:flex-col"
                     data-aos="fade-right">
 
                     <h1 className='text-4xl md:text-4xl md:mb-5 lg:ml-2 lg:text-4xl'>{t("Biz haqimizda")}</h1>

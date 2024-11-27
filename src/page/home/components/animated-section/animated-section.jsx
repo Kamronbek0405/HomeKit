@@ -14,7 +14,7 @@ export function AnimatedSection() {
     slidesToShow: 3,
     speed: 500,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [
@@ -38,11 +38,11 @@ export function AnimatedSection() {
 
 
   return (
-    <div id="aboutService" className="w-[420px] h-[123vh]   bg-gradient-to-t from-black via-rose-900 to-black relative md:w-[880px] md:h-[100vh]  lg:w-full lg:h-[100vh] lg:bg-gray-100 lg:bg-gradient-to-t lg:from-black lg:via-rose-900 lg:to-black lg:relative">
+    <div id="aboutService" className="w-[100%] h-[100vh]  overflow-hidden  bg-gradient-to-t from-black via-rose-900 to-black relative md:w-[100%] md:h-[80vh]  lg:w-full lg:h-[100vh] lg:bg-gray-100 lg:bg-gradient-to-t lg:from-black lg:via-rose-900 lg:to-black lg:relative">
       <Slider className="  lg:slider_container w-full  " {...settings}>
         <div className="slide-item bg-customRed mt-[300px]   relative lg:bg-customRed lg:mt-[320px] lg:relative  " >
           <img
-            className="  w-[150px] h-[150px] absolute left-20 -top-20  md:w-[200px] md:h-[200px] md:ml-20  md:-top-32 lg:w-[200px] lg:h-[200px] lg:slide-image   lg:absolute lg:bottom-40 lg:left-32  lg:transform lg:-translate-y-10"
+            className="  w-[150px] h-[150px] absolute left-20 -top-20  md:w-[200px] md:h-[200px] md:ml-20  md:-top-32 lg:w-[200px] lg:h-[200px] lg:slide-image   lg:absolute lg:-top-20 lg:left-16  lg:transform lg:-translate-y-10"
             src="https://www.homekit.uz/static/media/w8.b73f007ee540b46cba9c.png"
             alt="Oqish himoyasi"
           />
@@ -55,11 +55,11 @@ export function AnimatedSection() {
         </div>
         <div className="slide-item relative bg-customRed mt-[300px] ">
           <img
-            className="slide-image absolute left-14 -top-20 w-[150px] h-[150px] md:w-[200px] md:h-[200px] md:ml-24  md:-top-20 lg:w-[200px] lg:h-[200px] lg:absolute lg:left-32 lg:bottom-[170px]"
+            className="slide-image absolute left-14 -top-20 w-[150px] h-[150px] md:w-[200px] md:h-[200px] md:ml-24  md:-top-20 lg:w-[200px] lg:h-[200px] lg:absolute lg:left-12 lg:bottom-[50px]"
             src="https://www.homekit.uz/static/media/s44.abb85cf28e387add145f.png"
             alt="Video monitoring"
           />
-          <div className="slide-content text-white absolute bottom-16  px-16 flex flex-col items-center text-center md:left-7 ">
+          <div className="slide-content text-white absolute bottom-16  px-16 flex flex-col items-center text-center md:left-7  ">
             <h1 className=" text-xl md:text-2xl lg:text-4xl lg:font-medium lg:mb-2">{t("Video monitoring")}</h1>
             <p className="  lg:text-base mt-3 lg:mt-2 ">
               {t("Tashqi kameralar soni, ichki kameralar soni")}
@@ -68,7 +68,7 @@ export function AnimatedSection() {
         </div>
         <div className="slide-item bg-customRed mt-[320px]  relative ">
           <img
-            className="  w-[200px] h-[150px] absolute left-16 -top-20 md:w-[260px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-24  lg:transform lg:-translate-y-10"
+            className="  w-[200px] h-[150px] absolute left-16 -top-20 md:w-[260px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-5  lg:transform lg:-translate-y-10"
             src="https://www.homekit.uz/static/media/s55.e110011aab5fee4bf4e3.png"
             alt="Multimedia"
           />
@@ -80,29 +80,29 @@ export function AnimatedSection() {
         </div>
         <div className="slide-item bg-customRed mt-[320px]  relative ">
           <img
-            className=" w-[200px] h-[150px] absolute left-16 -top-16 md:w-[250px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-24  lg:transform lg:-translate-y-10"
+            className=" w-[200px] h-[150px] absolute left-16 -top-16 md:w-[250px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-5  lg:transform lg:-translate-y-10"
             src="https://www.homekit.uz/static/media/s666.a576f591b4b019ab2869.png"
             alt="Oqish himoyasi"
           />
-          <div className="slide-content text-white absolute bottom-9 flex flex-col items-center text-center md:left-8">
+          <div className="slide-content text-white absolute bottom-9 flex flex-col items-center text-center md:left-8 lg:left-0">
             <h1 className=" text-2xl font-medium md:text-2xl  lg:text-4xl lg:font-medium lg:mb-2">{t("Xavfsizlik tizimi")} </h1>
             <p className="text-base px-16 py-2"> {t("Termal yong'in detektorlari, Tutun detektorlari")}</p>
           </div>
         </div>
         <div className="slide-item bg-customRed mt-[320px]  relative ">
           <img
-            className=" w-[200px] h-[150px] absolute left-16 -top-16 md:w-[250px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-24  lg:transform lg:-translate-y-10"
+            className=" w-[200px] h-[150px] absolute left-16 -top-16 md:w-[250px] md:h-[200px] md:ml-20  md:-top-20 lg:w-[300px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-3  lg:transform lg:-translate-y-10"
             src="https://www.homekit.uz/static/media/w7.d19e1e5af45b62e8766b.png"
             alt="Oqish himoyasi"
           />
-          <div className="slide-content  text-white absolute top-32 left-10 text-center md:mt-12 lg:text-white lg:absolute lg:bottom-9 lg:left-32 lg:flex lg:flex-col lg:items-center lg:text-center">
+          <div className="slide-content  text-white absolute top-32 left-10 text-center md:mt-12 lg:text-white lg:absolute lg:top-20 lg:left-5 lg:flex lg:flex-col lg:items-center lg:text-center">
             <h1 className=" text-2xl md:ml-28 lg:text-4xl lg:font-medium lg:mb-2">{t("Interkom")}</h1>
             <p className="text-base  md:ml-28 py-2"> {t("Tashqi panellar, ichki panellar")}</p>
           </div>
         </div>
         <div className="slide-item bg-customRed mt-[320px]   relative ">
           <img
-            className=" w-[200px] h-[200px] absolute -top-20 left-16 md:w-[250px] md:h-[250px] md:ml-20  md:-top-32 lg:w-[200px] lg:h-[200px]  lg:absolute lg:bottom-40 lg:left-36  lg:transform lg:-translate-y-10"
+            className=" w-[200px] h-[200px] absolute -top-20 left-16 md:w-[250px] md:h-[250px] md:ml-20  md:-top-32 lg:w-[200px] lg:h-[200px]  lg:absolute lg:-top-16 lg:left-16  lg:transform lg:-translate-y-10"
             src="https://www.homekit.uz/static/media/11q.549c15abadecf3d977cc.png"
             alt="Oqish himoyasi"
           />

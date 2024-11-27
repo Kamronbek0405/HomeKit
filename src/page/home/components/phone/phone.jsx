@@ -32,9 +32,8 @@ export const Phone = () => {
     const { t, i18n } = useTranslation()
     const [formData, setFormData] = useState({
         name: "",
-        surname: "",
         phone: "",
-        problem: "",
+       
     });
 
     const [messageStatus, setMessageStatus] = useState("");
@@ -49,7 +48,7 @@ export const Phone = () => {
     const setMessage = (event) => {
         event.preventDefault();
 
-        const token = "7773750850:AAFqIdffrQSA9HJfzQO9yRImbOma8-rAGL8";
+        const token = "7133522730:AAEeATu9aK-HZFAD3J5yAVW5MwbBsN7pgwQ";
         const chat_id = "1271362249";
 
         if (!token || !chat_id) {
@@ -62,9 +61,8 @@ export const Phone = () => {
         const message = `
           📌 *New Inquiry from Website*:
           - 👤 Name: ${formData.name}
-          - 🧑 Surname: ${formData.surname}
           - 📞 Phone: ${formData.phone}
-          - 📝 Problem: ${formData.problem}
+         
         `;
 
         
@@ -80,7 +78,7 @@ export const Phone = () => {
             })
             .then((res) => {
                 setMessageStatus(t("success"));
-                setFormData({ name: "", surname: "", phone: "", problem: "" });
+                setFormData({ name: "",  phone: "" });
             })
             .catch((error) => {
                 console.error("Error sending message", error);
@@ -94,8 +92,8 @@ export const Phone = () => {
 
 
     return (
-        <div id='contact' className='w-[100%] h-auto py-20 bg-gradient-to-r from-gray-700 via-red-950 to-gray-700 flex flex-col  items-center justify-center gap-10 '>
-            <div className='  md:mr-20  lg:w-[800px]  lg:mr-32'>
+        <div id='contact' className='w-[100%]  overflow-hidden h-auto py-20 bg-gradient-to-r from-gray-700 via-red-950 to-gray-700 flex flex-col  items-center justify-center gap-10 '>
+            <div className='  md:mr-20  lg:w-[852px]   lg:mr-44'>
                 <span className=' text-white text-xs ml-10   md:text-xl   lg:text-white lg:text-lg' data-aos="fade-right">
                     {t("Bizning operatorlarimiz sizga tez orada javob berishadi.")}
                 </span>
@@ -105,7 +103,7 @@ export const Phone = () => {
                 </h1>
 
             </div>
-            <div className='w-[400px] h-[160vh]  flex flex-col items-center  rounded-3xl border-2 border-white md:w-[700px] md:h-[100vh] lg:w-[1100px] lg:h-[880px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
+            <div className='w-[400px] h-[120vh]  flex flex-col items-center  rounded-3xl border-2 border-white md:w-[700px] md:h-[100vh] lg:w-[1100px] lg:h-[930px] lg:flex lg:flex-col lg:items-center lg:rounded-3xl lg:border-2 lg:border-white'>
                 <form id="myform" onSubmit={setMessage}>
                     <div className='lg:py-5 mt-12 ml-8 lg:ml-14'>
                         <input
@@ -115,6 +113,7 @@ export const Phone = () => {
                             value={formData.name}
                             onChange={handleInputChange}
                             required
+                            placeholder={t("Ismi")}
                         />
                         <div className='w-[330px] md:w-[620px] lg:w-[990px] h-[0.5px] mt-1 bg-white '></div>
                     </div>
@@ -126,10 +125,11 @@ export const Phone = () => {
                             value={formData.phone}
                             onChange={handleInputChange}
                             required
+                            placeholder={t("Telefon raqami")}
                         />
                         <div className='w-[330px] md:w-[620px] lg:w-[990px] h-[0.5px] mt-1 bg-white'></div>
                     </div>
-                    <div className=' flex  flex-wrap gap-6  justify-center items-center md:gap-20 lg:flex lg:flex-wrap lg:px-20 lg:mt-16 lg:justify-center lg:gap-16'>
+                    <div className=' flex  flex-wrap gap-6  py-5 justify-center items-center md:gap-20 lg:flex lg:flex-wrap lg:px-20 lg:mt-16 lg:justify-center lg:gap-16'>
                         <div className='flex mb-1 flex-col items-center text-white hover:scale-125 transition-all duration-500'>
                             <AudioSystems />
                             <span>{t("Audio tizimlar")}</span>
@@ -223,7 +223,7 @@ export const Phone = () => {
 
 
                     </div>
-                    <button type='submit' className=' w-[330px] mt-9 text-white py-3  lg: ml-11 md:w-[600px] md:mt-12 md:py-4 md:text-xl lg:mt-20 lg:w-[1000px] lg:h-[50px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
+                    <button type='submit' className=' w-[330px] mt-9 text-white py-3  lg: ml-11 md:w-[600px] md:mt-12 md:py-4 md:text-xl lg:mt-20 lg:w-[1000px] lg:h-[55px]  bg-customRed lg:text-white'>{t("Yuborish")}</button>
                 </form>
             </div>
         </div>

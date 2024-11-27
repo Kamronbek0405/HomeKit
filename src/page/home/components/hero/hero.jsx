@@ -29,7 +29,7 @@ export function Hero() {
 
     return (
         <Slider {...settings}>
-        <div id='hero' className="bg-[url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')] bg-no-repeat bg-cover lg:w-[100%] lg:h-[680px] lg:px-40 lg:py-[110px] w-[390px] h-[568px]">
+        <div id='hero' className="bg-[url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')] bg-no-repeat bg-cover lg:w-[100%] lg:h-[680px] lg:px-40 lg:py-[5px] w-[390px] h-[568px]">
             <div className=' md:ml-16 md:mt-32  lg:w-[800px] lg:h-[500px] w-[90%] h-[400px]'>
                 <h1 className=' md:text-4xl lg:font-medium lg:tracking-wide lg:text-gray-700 lg:text-5xl lg:leading-normal font-medium tracking-wide text-white text-2xl px-10 mt-10 py-2 leading-normal'>
                     {t("HomeKit texnologiyalaridan foydalanish qulayligi:")}
@@ -43,7 +43,7 @@ export function Hero() {
             </div>
         </div>
     
-        <div className="relative bg-[url('https://www.homekit.uz/static/media/e11.2d00e0fc48f03f0176f9.jpg')] bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40 lg:py-[110px] w-[390px] h-[569px]">
+        <div className="relative bg-[url('https://www.homekit.uz/static/media/e11.2d00e0fc48f03f0176f9.jpg')] bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40 lg:py-[5px] w-[390px] h-[569px]">
             <div className=" md:ml-16 md:mt-32  lg:w-[800px] lg:h-[500px] w-[90%] h-[400px]">
                 <h1 className=" md:text-4xl lg:font-medium lg:tracking-wide lg:text-white lg:text-5xl lg:leading-normal text-white text-2xl px-10 mt-10 py-2">
                     {t("Eshiklarni qulflash va ochish HomeKit bilan osonroq.")}
@@ -57,7 +57,7 @@ export function Hero() {
             </div>
         </div>
     
-        <div className="relative bg-[url('https://www.homekit.uz/static/media/t10.01fa6ef74fcc289bbd8f.jpg')] bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40 lg:py-[100px] w-[390px] h-[568px]">
+        <div className="relative bg-[url('https://www.homekit.uz/static/media/t10.01fa6ef74fcc289bbd8f.jpg')] bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40 lg:py-[5px] w-[390px] h-[568px]">
             <div className=" md:ml-16 md:mt-32 lg:w-[800px] lg:h-[500px] w-[90%] h-[400px]">
                 <h1 className=" md:text-4xl lg:font-medium lg:tracking-wide lg:text-white lg:text-5xl lg:leading-normal text-white text-2xl px-10 mt-10 py-2">
                     {t("HomeKit bilan uyingizni boshqaring:")}
@@ -71,9 +71,11 @@ export function Hero() {
             </div>
         </div>
     
-        <div className="relative bg-[url('https://www.homekit.uz/static/media/e3.a762accf534abd2401e0.jpg')] bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40  lg:py-[110px] w-[390px] h-[569px]">
-            <div className=" md:ml-16 md:mt-32 lg:w-[800px] lg:h-[500px] w-[90%] h-[400px]">
-                <h1 className="lg:font-medium lg:tracking-wide lg:text-white lg:text-5xl lg:leading-normal text-white text-2xl px-10 mt-10 py-2">
+        <div className="relative  bg-[url('https://www.homekit.uz/static/media/e3.a762accf534abd2401e0.jpg')]    bg-no-repeat bg-cover lg:w-full lg:h-[680px] lg:px-40  lg:py-[5px] w-[390px] h-[569px]">
+           
+           
+           <div className="  md:ml-16 md:mt-32  lg:w-[800px] lg:h-[500px] w-[90%]  h-[400px]">
+                <h1 className="   lg:font-medium  lg:tracking-wide lg:text-white lg:text-5xl lg:leading-normal text-white text-2xl px-10 mt-10 py-2">
                     {t("HomeKit bilan energiyani tejash:")}
                 </h1>
                 <p className="lg:text-white lg:text-2xl lg:mt-10 text-white text-lg px-10">
@@ -82,7 +84,9 @@ export function Hero() {
                 <button className='  md:mt-10 md:py-4 md:px-12 lg:px-9 lg:text-lg lg:py-3 lg:bg-customRed lg:rounded-full lg:text-white lg:mt-7 px-7 text-md py-2 ml-10 bg-customRed rounded-full text-white mt-7'>
                     {t("Bog'lanish")}
                 </button>
-            </div>
+            
+           
+           </div>
         </div>
     </Slider>
     

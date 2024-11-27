@@ -2,7 +2,7 @@ import React from 'react';
 
  export  const SellIcon = () => {
   return (
-   <div className='lg:w-[75px] lg:h-[75px] lg:py-2 w-[70px] h-[30px]'>
+   <div className='lg:w-[75px] lg:h-[75px] lg:py-2 w-[70px] h-[30px] md:w-[40px] md:h-[30px]'>
      <svg
       className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
       focusable="false"
